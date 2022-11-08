@@ -24,7 +24,7 @@ void OutputGcs()
 void OutputPcs()
 {
     OGRSpatialReference spatialReference;
-    spatialReference.importFromEPSG(4490);          //XIAN80
+    spatialReference.importFromEPSG(4490);          //CGCS2000
     spatialReference.SetTM(0, 114, 1.0, 38500000, 0);
 
     char* pszWKT = nullptr;
