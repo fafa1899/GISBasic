@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example7EqualizeHist", "Example7EqualizeHist.vcxproj", "{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Debug|x64.ActiveCfg = Debug|x64
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Debug|x64.Build.0 = Debug|x64
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Debug|x86.ActiveCfg = Debug|Win32
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Debug|x86.Build.0 = Debug|Win32
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Release|x64.ActiveCfg = Release|x64
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Release|x64.Build.0 = Release|x64
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Release|x86.ActiveCfg = Release|Win32
+		{B7C020BC-3BAC-44AB-AE63-BDDC7794FC66}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E1F739F-A8C5-4022-90B5-FECEA2F80FAD}
+	EndGlobalSection
+EndGlobal

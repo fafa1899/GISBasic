@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Example6Resample.cpp">
+    <ClCompile Include="Example7EqualizeHist.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
