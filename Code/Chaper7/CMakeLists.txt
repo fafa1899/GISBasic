@@ -8,3 +8,5 @@ project ("Chaper7")
 # 包含子项目。
 add_subdirectory ("Example1DemModel")
 add_subdirectory ("Example2DemModel")
+add_subdirectory ("Example3DemModel")
+add_subdirectory ("Example8CreateBuilding")
