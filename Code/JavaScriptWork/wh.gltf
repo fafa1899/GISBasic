@@ -1,0 +1,128 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 347,
+            "type": "VEC3",
+            "max": [
+                39.29902267456055,
+                26.0,
+                0.008675148710608483
+            ],
+            "min": [
+                -7.3490800857543949,
+                -0.000268460251390934,
+                -52.19839859008789
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 347,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -0.000008226610589190387,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 669,
+            "type": "SCALAR",
+            "max": [
+                346
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11004,
+            "uri": "wh.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 4164,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 4164,
+            "byteLength": 4164,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8328,
+            "byteLength": 2676,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.765999972820282,
+                    0.335999995470047,
+                    1.0
+                ],
+                "metallicFactor": 0.5,
+                "roughnessFactor": 0.10000000149011612
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
