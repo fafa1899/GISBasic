@@ -10,3 +10,6 @@ add_subdirectory ("Example1DemModel")
 add_subdirectory ("Example2DemModel")
 add_subdirectory ("Example3DemModel")
 add_subdirectory ("Example8CreateBuilding")
+add_subdirectory ("Example9Osgb")
+add_subdirectory ("Example10ObliqueIndexes")
+
