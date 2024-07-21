@@ -8,4 +8,4 @@ project ("Example")
 # 包含子项目。
 add_subdirectory ("Example3-1-SRS")
 add_subdirectory ("Example3-2-SRSTmConvertor")
-
+add_subdirectory ("Example3-3-WebMercatorConvertor")
