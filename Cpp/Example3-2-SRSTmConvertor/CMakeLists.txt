@@ -5,7 +5,7 @@ message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}.")
 cmake_minimum_required (VERSION 3.9)
 
 # 工程名称、版本、语言
-project ("Example3-1-SRS" VERSION 0.1 LANGUAGES CXX)
+project ("Example3-2-SRSTmConvertor" VERSION 0.1 LANGUAGES CXX)
 
 # 支持当前目录
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -53,7 +53,7 @@ include_directories($ENV{GISBasic}/include)
 include_directories(${GDAL_INCLUDE_DIR})
 
 # 将源代码添加到此项目的可执行文件。
-add_executable (${PROJECT_NAME} "Example3-1-SRS.cpp" )
+add_executable (${PROJECT_NAME} "Example3-2-SRSTmConvertor.cpp" )
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} PRIVATE ${GDAL_LIBRARY})
