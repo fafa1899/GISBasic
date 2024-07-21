@@ -359,17 +359,6 @@ import { GUI } from './lib/three/jsm/libs/lil-gui.module.min.js';
 
 		SetStats();	//设置监视器
 
-		// 获取状态栏元素
-		var statusBar = document.getElementById('statusBar');
-
-		// 设置状态栏的文本信息
-		function setStatusText(text) {
-			statusBar.textContent = text; // 或使用 innerHTML 如果需要插入HTML内容
-		}
-
-		// 示例：更改状态栏信息
-		setStatusText("这里是新的状态信息");
-
 		// 相机
 		const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 20000);
 		camera.position.set(0, 1200, 0);   //相机的位置
@@ -406,8 +395,7 @@ import { GUI } from './lib/three/jsm/libs/lil-gui.module.min.js';
 				let x = (event.clientX / window.innerWidth) * 2 - 1;
 				let y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-				raycaster.setFromCamera(new THREE.Vector2(x, y), camera);
-				//console.log(layerGroup.children[15]);
+				raycaster.setFromCamera(new THREE.Vector2(x, y), camera);			
 				const intersects = raycaster.intersectObjects(layerGroup.children, true);
 				if (intersects.length > 0) {
 					const intersectionPoint = intersects[0].point;

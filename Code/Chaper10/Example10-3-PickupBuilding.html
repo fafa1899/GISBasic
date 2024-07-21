@@ -9,30 +9,12 @@
       margin: 0;
     }
 
-    #statusBar {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 30px;
-      /* 设置状态栏的高度为30像素 */
-      line-height: 30px;
-      /* 保证文本垂直居中 */
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 0;
-      /* 移除内外边距以精确控制高度，如有需要可适当调整 */
-      z-index: 1000;
-    }
-
     #toolbar {
       position: absolute;
       top: 60px;
       left: 10px;
-      z-index: 999;
       /* 确保工具栏在3D场景之上 */
+      z-index: 999;
     }
 
     .image-text-button {
@@ -41,18 +23,14 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-      /* 控制图片和文字之间的间距 */
       padding: 1px;
       border: none;
       background-color: rgba(160, 160, 160, 0.5);
-      /* 按钮背景颜色 */
       color: rgb(0, 0, 0);
-      /* 文本颜色 */
       cursor: pointer;
       outline: none;
     }
 
-    /* 按钮被按下时的样式 */
     .active {
       background-color: rgba(255, 255, 255, 0.5);
     }
@@ -97,16 +75,10 @@
 <body>
   <div id="toolbar">
     <button class="image-text-button" id="toggleButton">
-      <img src="resource/pickup.png" alt="Your Image Description">
+      <img src="resource/pickup.png" alt="双击拾取建筑物">
       点击拾取
     </button>
-    <button class="image-text-button">
-      <img src="resource/find.png" alt="Your Image Description">
-      属性查询
-    </button>
-    <!-- 更多按钮... -->
   </div>
-  <div id="statusBar">这里是状态信息</div>
   <script src="../lib/proj4-src.js"></script>
   <script type="importmap">
         {
@@ -117,7 +89,7 @@
         }
   </script>
   <div id="popupTable" class="popup-table hidden">
-    <table id = "property-table">
+    <table id="property-table">
       <thead>
         <tr>
           <th>属性字段</th>
@@ -140,27 +112,27 @@
         <tr>
           <td>objectid</td>
           <td></td>
-        </tr>      
+        </tr>
         <tr>
           <td>code</td>
           <td></td>
-        </tr>  
+        </tr>
         <tr>
           <td>bld_id</td>
           <td></td>
-        </tr>  
+        </tr>
         <tr>
           <td>height</td>
           <td></td>
-        </tr>  
+        </tr>
         <tr>
           <td>elev</td>
           <td></td>
-        </tr>    
+        </tr>
         <tr>
           <td>area</td>
           <td></td>
-        </tr> 
+        </tr>
         <tr>
           <td>lariac_sou</td>
           <td></td>
@@ -168,23 +140,23 @@
         <tr>
           <td>lariac_dat</td>
           <td></td>
-        </tr>  
+        </tr>
         <tr>
           <td>ain</td>
           <td></td>
-        </tr> 
+        </tr>
         <tr>
           <td>status</td>
           <td></td>
-        </tr> 
+        </tr>
         <tr>
           <td>code_num</td>
           <td></td>
-        </tr>  
+        </tr>
       </tbody>
     </table>
   </div>
-  <script type="module" src="./Example10-1.js"></script>
+  <script type="module" src="./Example10-3-PickupBuilding.js"></script>
 </body>
 
 </html>
