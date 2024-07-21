@@ -56,7 +56,7 @@ void GetQueryBuilding(const Request& request, Response& response) {
 
 int main(int argc, char* argv[]) {
   string workDir = getenv("GISBasic");
-  workDir = workDir + "/../Code/Chaper9";
+  workDir = workDir + "/../Code/Chaper10";
 
   Server server;
 
