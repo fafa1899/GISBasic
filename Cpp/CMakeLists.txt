@@ -10,3 +10,7 @@ add_subdirectory ("Example3-1-SRS")
 add_subdirectory ("Example3-2-SRSTmConvertor")
 add_subdirectory ("Example3-3-WebMercatorConvertor")
 add_subdirectory ("Example3-4-BlhEcefGdal")
+add_subdirectory ("Example3-5-BlhEcef")
+add_subdirectory ("Example3-6-EnuConvertor")
+
+
