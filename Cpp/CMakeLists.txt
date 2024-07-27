@@ -12,5 +12,7 @@ add_subdirectory ("Example3-3-WebMercatorConvertor")
 add_subdirectory ("Example3-4-BlhEcefGdal")
 add_subdirectory ("Example3-5-BlhEcef")
 add_subdirectory ("Example3-6-EnuConvertor")
+add_subdirectory ("Example4-1-VectorConvert") 
+
 
 
