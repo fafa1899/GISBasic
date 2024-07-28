@@ -1,0 +1,10 @@
+prefix=C:/File/MyGitHub/GISBasic/3rdParty
+exec_prefix=C:/File/MyGitHub/GISBasic/3rdParty
+libdir=C:/File/MyGitHub/GISBasic/3rdParty/lib
+includedir=C:/File/MyGitHub/GISBasic/3rdParty/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 3.0.3
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}
