@@ -27,7 +27,7 @@ level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .in \\n[rst2man-indent\\n[rst2man-indent-level]]u
 ..
-.TH "TIFFWARNING" "3tiff" "Jul 28, 2024" "4.6" "LibTIFF"
+.TH "TIFFWARNING" "3tiff" "Jul 29, 2024" "4.6" "LibTIFF"
 .SH NAME
 TIFFWarning \- library warning interface
 .SH SYNOPSIS

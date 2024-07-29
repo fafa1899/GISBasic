@@ -27,7 +27,7 @@ level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
 .in \\n[rst2man-indent\\n[rst2man-indent-level]]u
 ..
-.TH "TIFFPROCFUNCTIONS" "3tiff" "Jul 28, 2024" "4.6" "LibTIFF"
+.TH "TIFFPROCFUNCTIONS" "3tiff" "Jul 29, 2024" "4.6" "LibTIFF"
 .SH NAME
 TIFFProcFunctions \- set TIFF processing functions
 .SH SYNOPSIS
