@@ -24,4 +24,5 @@ add_subdirectory ("Example4-9-Points2Tin")
 add_subdirectory ("Example4-10-PolygonTriangulation")
 add_subdirectory ("Example5-1-RasterBase")
 add_subdirectory ("Example5-2-CreateRaster")
+add_subdirectory ("Example5-3-GeoInfo")
 
