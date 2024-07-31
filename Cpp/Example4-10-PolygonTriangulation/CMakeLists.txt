@@ -53,6 +53,6 @@ add_executable (${PROJECT_NAME} "Example4-10-PolygonTriangulation.cpp" )
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} PRIVATE GDAL::GDAL)
-target_link_libraries(${PROJECT_NAME} PRIVATE "C:/File/MyGitHub/GISBasic/3rdParty/lib/gmp.lib")
+target_link_libraries(${PROJECT_NAME} PRIVATE $ENV{GISBasic}/lib/gmp.lib)
 
 # TODO: 如有需要，请添加测试并安装目标。
