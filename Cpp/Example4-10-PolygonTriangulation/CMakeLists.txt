@@ -44,7 +44,6 @@ find_package(GDAL REQUIRED)
 
 # config 3rdParty
 message(STATUS "GISBasic is $ENV{GISBasic}/include.")
-include_directories($ENV{GISBasic}/include)
 include_directories($ENV{GISBasic}/include/gmp)
 include_directories($ENV{GISBasic}/include/mpfr)
 

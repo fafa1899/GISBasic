@@ -5,7 +5,7 @@ message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}.")
 cmake_minimum_required (VERSION 3.9)
 
 # 工程名称、版本、语言
-project ("Example4-9-Points2Tin" VERSION 0.1 LANGUAGES CXX)
+project ("Example5-8-Gradient" VERSION 0.1 LANGUAGES CXX)
 
 # 支持当前目录
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -40,18 +40,12 @@ ELSEIF(CMAKE_SYSTEM_NAME MATCHES "Windows")
 ENDIF()
 
 # 配置第三方库环境
-find_package(GDAL REQUIRED)  
-
-# config 3rdParty
-message(STATUS "GISBasic is $ENV{GISBasic}/include.")
-include_directories($ENV{GISBasic}/include/gmp)
-include_directories($ENV{GISBasic}/include/mpfr)
+find_package(OpenCV REQUIRED)
 
 # 将源代码添加到此项目的可执行文件。
-add_executable (${PROJECT_NAME} "Example4-9-Points2Tin.cpp" )
+add_executable (${PROJECT_NAME} "Example5-8-Gradient.cpp" )
 
 # 链接库
-target_link_libraries(${PROJECT_NAME} PRIVATE GDAL::GDAL)
-target_link_libraries(${PROJECT_NAME} PRIVATE $ENV{GISBasic}/lib/gmp.lib)
+target_link_libraries(${PROJECT_NAME} PRIVATE opencv_world)
 
 # TODO: 如有需要，请添加测试并安装目标。
