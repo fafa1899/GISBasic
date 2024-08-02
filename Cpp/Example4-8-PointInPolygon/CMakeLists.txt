@@ -30,11 +30,13 @@ else()
     message(">> unknow compiler.")
 endif()
 
-# config 3rdParty
-message(STATUS "GISBasic is $ENV{GISBasic}/include.")
-include_directories($ENV{GISBasic}/include/eigen3)
+# 配置第三方库环境
+find_package(Eigen3 REQUIRED)
 
 # 将源代码添加到此项目的可执行文件。
 add_executable (${PROJECT_NAME} "Example4-8-PointInPolygon.cpp" )
+
+# 链接库
+target_link_libraries(${PROJECT_NAME} PRIVATE Eigen3::Eigen)
 
 # TODO: 如有需要，请添加测试并安装目标。
