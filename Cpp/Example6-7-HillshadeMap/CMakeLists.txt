@@ -5,7 +5,7 @@ message(STATUS "The CMAKE_VERSION is ${CMAKE_VERSION}.")
 cmake_minimum_required (VERSION 3.9)
 
 # 工程名称、版本、语言
-project ("Example6-6-Tin2Dem" VERSION 0.1 LANGUAGES CXX)
+project ("Example6-7-HillshadeMap" VERSION 0.1 LANGUAGES CXX)
 
 # 支持当前目录
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -35,7 +35,7 @@ find_package(GDAL REQUIRED)
 find_package(Eigen3 REQUIRED)
 
 # 将源代码添加到此项目的可执行文件。
-add_executable (${PROJECT_NAME} "Example6-6-Tin2Dem.cpp" )
+add_executable (${PROJECT_NAME} "Example6-7-HillshadeMap.cpp" )
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} PRIVATE GDAL::GDAL)
