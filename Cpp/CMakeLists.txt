@@ -44,4 +44,4 @@ add_subdirectory ("Example6-6-Tin2Dem")
 add_subdirectory ("Example6-7-HillshadeMap")
 add_subdirectory ("Example6-8-HillshadeMap")
 add_subdirectory ("Example6-9-HillshadeMap")
-
+add_subdirectory ("Example6-10-ContourLineMap")
