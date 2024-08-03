@@ -40,3 +40,5 @@ add_subdirectory ("Example6-2-DemWriter")
 add_subdirectory ("Example6-3-Gird2Tin")
 add_subdirectory ("Example6-4-Gird2Tin")
 add_subdirectory ("Example6-5-DemResample")
+add_subdirectory ("Example6-6-Tin2Dem")
+
