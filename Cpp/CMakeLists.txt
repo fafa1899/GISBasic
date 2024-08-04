@@ -49,3 +49,5 @@ add_subdirectory ("Example6-11-IsoHeightMap")
 add_subdirectory ("Example7-1-DemModel")
 add_subdirectory ("Example7-2-DemModel")
 add_subdirectory ("Example7-3-DemModel")
+add_subdirectory ("Example7-8-CreateBuilding")
+
