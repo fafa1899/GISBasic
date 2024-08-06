@@ -36,14 +36,8 @@ void TraversePagedLod(osg::PagedLOD* pagedLod, int printSpace) {
 }
 
 int main(int argc, char* argv[]) {
-  if (argc < 2) {
-    printf("请设置osgb文件路径！");
-  }
-
-  string osgPath = argv[1];
-  if (osgPath.empty()) {
-    printf("osgb文件路径为空！");
-  }
+  string osgPath = getenv("GISBasic");
+  osgPath += "/../Data/Model/Tile_+005_+004/Tile_+005_+004.osgb";
 
   int printSpace = 0;
   TraverseGroupNode(osgPath, printSpace);

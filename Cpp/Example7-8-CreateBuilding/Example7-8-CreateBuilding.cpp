@@ -282,7 +282,7 @@ void WriteGltf() {
   scene.mMaterials[0] = material;
 
   string dstFile = getenv("GISBasic");
-  dstFile = dstFile + "/../Code/JavaScriptWork/wh.gltf";
+  dstFile = dstFile + "/../Data/Model/wh.gltf";
 
   exporter.Export(&scene, "gltf2", dstFile, aiProcess_GenNormals);
 }
