@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "poi",
+"features": [
+{ "type": "Feature", "properties": { "fclass": "viewpoint", "name": "Hollywood Bowl Overlook" }, "geometry": { "type": "Point", "coordinates": [ 376219.27934399998048, 3775878.53795799985528, 311.311871558980329 ] } },
+{ "type": "Feature", "properties": { "fclass": "butcher", "name": "Druzhba Meat Market" }, "geometry": { "type": "Point", "coordinates": [ 379713.53451399999904, 3773729.99419899983332, 120.04725415363275 ] } },
+{ "type": "Feature", "properties": { "fclass": "viewpoint", "name": "The Tiffany & Co. Foundation Overlook" }, "geometry": { "type": "Point", "coordinates": [ 379606.10186599998269, 3776925.20970899984241, 383.614784602111115 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Hollywood Movie Star Homes Tour" }, "geometry": { "type": "Point", "coordinates": [ 376500.089546, 3774218.294755, 115.725779704529216 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Mark Harmon" }, "geometry": { "type": "Point", "coordinates": [ 377668.51234499999555, 3774225.9037239998579, 115.19037725013979 ] } },
+{ "type": "Feature", "properties": { "fclass": "viewpoint", "name": "Beachwood Dr. - Mid-block" }, "geometry": { "type": "Point", "coordinates": [ 378035.88631199998781, 3774859.20493499981239, 145.673195884225805 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Cathedral Mausoleum" }, "geometry": { "type": "Point", "coordinates": [ 378536.719195, 3772716.40325699979439, 105.779365754110827 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Grave of Judy Garland" }, "geometry": { "type": "Point", "coordinates": [ 378093.75397, 3772792.103333, 111.349871224993194 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Paramount Pictures Studio Tour" }, "geometry": { "type": "Point", "coordinates": [ 378142.63355799997225, 3772218.73672799998894, 88.347501922602689 ] } },
+{ "type": "Feature", "properties": { "fclass": "arts_centre", "name": "Corita Art Center" }, "geometry": { "type": "Point", "coordinates": [ 379106.860982, 3774713.643405, 142.539924710688581 ] } },
+{ "type": "Feature", "properties": { "fclass": "tourist_info", "name": "Observatory Trailheads" }, "geometry": { "type": "Point", "coordinates": [ 379538.2695909999893, 3775616.795282, 193.153827733831719 ] } },
+{ "type": "Feature", "properties": { "fclass": "pharmacy", "name": "Hye Pharmacy & Medical Supply" }, "geometry": { "type": "Point", "coordinates": [ 379650.29373199999, 3772975.29232499981299, 114.650868895302921 ] } },
+{ "type": "Feature", "properties": { "fclass": "theatre", "name": "McCadden Theatre" }, "geometry": { "type": "Point", "coordinates": [ 376598.237399999984, 3773215.93463899986818, 100.327523787106529 ] } },
+{ "type": "Feature", "properties": { "fclass": "attraction", "name": "Samuel-Novarro House" }, "geometry": { "type": "Point", "coordinates": [ 379005.41027599998051, 3775247.7530299997889, 202.106734980821955 ] } },
+{ "type": "Feature", "properties": { "fclass": "viewpoint", "name": "Best Hollywood Sign Vista" }, "geometry": { "type": "Point", "coordinates": [ 378249.37231399997836, 3777428.550946, 344.734450697458328 ] } }
+]
+}
