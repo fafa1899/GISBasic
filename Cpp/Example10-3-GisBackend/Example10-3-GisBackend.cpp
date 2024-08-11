@@ -28,8 +28,6 @@ WHERE ST_Contains(geom_field, ST_SetSRID(ST_MakePoint(%s, %s), 32611));)";
     sprintf(sqlString, sqlTemplateString.c_str(), x.c_str(), y.c_str());
 
     pqxx::result execResult = worker.exec(sqlString);
-    for (int ci = 1; ci < execResult.columns() - 1; ++ci) {
-    }
     if (execResult.size() > 0) {
       for (int j = 1; j < execResult[0].size() - 1; j++) {
         json[execResult.column_name(j)] = execResult[0][j].c_str();
@@ -51,7 +49,8 @@ void GetQueryBuilding(const Request& request, Response& response) {
   nlohmann::json json =
       QueryBuilding(request.get_param_value("x"), request.get_param_value("y"));
   response.status = 200;
-  response.set_content(json.dump(), "application/json");
+  response.set_content(json.dump(), "application/json"); 
+  response.set_header("Access-Control-Allow-Origin", "*");  // ÔÊÐí¿çÓòÇëÇó
 }
 
 int main(int argc, char* argv[]) {
