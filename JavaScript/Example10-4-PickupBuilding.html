@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="utf-8">
+  <title>Example9-5-ThreeDGisScene</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #toolbar {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      /* 确保工具栏在3D场景之上 */
+      z-index: 999;
+    }
+
+    .image-text-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 1px;
+      border: none;
+      background-color: rgba(160, 160, 160, 0.5);
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      outline: none;
+    }
+
+    .active {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .image-text-button img {
+      width: 48px;
+      max-width: 100%;
+      /* 图片宽度不超过按钮宽度 */
+      height: auto;
+    }
+
+    .popup-table {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .popup-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .popup-table th,
+    .popup-table td {
+      border: 1px solid #666;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="toolbar">
+    <button class="image-text-button" id="toggleButton">
+      <img src="resource/pickup.png" alt="双击拾取建筑物">
+      点击拾取
+    </button>
+  </div>
+  <div id="popupTable" class="popup-table hidden">
+    <table id="property-table">
+      <thead>
+        <tr>
+          <th>属性字段</th>
+          <th>属性值</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>经度</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>纬度</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>高度</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>objectid</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>code</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>bld_id</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>elev</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>area</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>lariac_sou</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>lariac_dat</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>ain</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>status</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>code_num</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script type="module" src="./Example10-4-PickupBuilding.js"></script>
+</body>
+
+</html>
