@@ -10,7 +10,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "vite": "^5.3.5"
+    "vite": "^5.3.5",
+    "vite-plugin-cesium": "^1.2.23"
   },
   "dependencies": {
     "cesium": "^1.120.0",

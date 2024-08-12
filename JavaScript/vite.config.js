@@ -1,17 +1,9 @@
 import { defineConfig } from 'vite';
+import cesium from 'vite-plugin-cesium';
 
 export default defineConfig({
   server: {
     port: 3000
   },
-  resolve: {
-    alias: {
-      'cesium': 'cesium/Source',
-    }
-  },
-  build: {
-    rollupOptions: {
-      external: ['cesium']
-    }
-  }
+  plugins: [cesium()]
 });
