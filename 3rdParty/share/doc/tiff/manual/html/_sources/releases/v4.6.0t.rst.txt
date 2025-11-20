@@ -1,0 +1,56 @@
+Changes in TIFF v4.6.0t
+================================
+
+.. table:: References
+    :widths: auto
+
+    ======================  ==========================================
+    Current Version         :doc:`v4.6.0t <v4.6.0t>`
+    Previous Version        :doc:`v4.6.0 <v4.6.0>`
+    Master Download Site    `<http://www.libtiff.org/downloads/>`_
+    ======================  ==========================================
+
+This document provides a summary of significant changes made to the
+software between the *previous* and *current* versions (see
+above). A fully-detailed change summary is provided by the :file:`ChangeLog` file
+included in the release package and by the Git commit history:
+
+Major changes
+-------------
+
+    This version fixes and restores all utilities and tool features that
+    were removed or made unsupported in v4.6.0.
+
+
+Minor changes
+-------------
+
+* Fix some build warnings and other build issues.
+
+* Fix basic handling of some problematic TIFF input.
+
+* Fix some documentation problems.
+
+* Fix tiff2pdf OJPEG positioning and rendering problems.
+
+* Fix fax2tiff output of extra row on EOFB.
+
+* Fix tiff2pdf swapping of red and blue on RGB input.
+
+* Fix memory leak on some G3/G4 input.
+
+* Fix tiff2pdf from producing some broken PDFs.
+
+* Correct rare operational mistake by TIFFFieldInfo.
+
+* Avoid memory leak in TIFFCreateDirectory.
+
+* Fix TIFFSetField from sometimes overwriting the last character.
+
+* Fix some issues in library found through fuzzing.
+
+* Fix a performance regression.
+
+* Prevent some out-of-memory attacks.
+
+* More...
