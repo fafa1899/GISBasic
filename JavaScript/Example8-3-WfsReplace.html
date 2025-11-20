@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example8-3-WfsReplace</title>
+  <script>
+    var url = "/geoserver/wfs";
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-Type", "text/xml");
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText);
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+    //替换       
+    var xml = `<?xml version='1.0' encoding='UTF-8'?>
+<wfs:Transaction version="2.0.0" service="WFS"
+    xmlns:test="https://test"
+    xmlns:fes="http://www.opengis.net/fes/2.0"
+    xmlns:wfs="http://www.opengis.net/wfs/2.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/wfs/2.0
+			http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+  <wfs:Replace> 
+    <test:multipolygons gml:id="multipolygons.351">
+      <test:the_geom>
+        <gml:MultiSurface srsName="http://www.opengis.net/gml/srs/epsg.xml#4326" srsDimension="2" gml:id="multipolygons.352.the_geom">
+          <gml:surfaceMember>
+            <gml:Polygon gml:id="multipolygons.351.the_geom.1">
+              <gml:exterior>
+                <gml:LinearRing>
+                  <gml:posList>-77.039412232917 38.8954267799311 -77.039412232917 38.8965224165805 -77.0380063000187 38.8965224165805 -77.039412232917 38.8954267799311
+                  </gml:posList>
+                </gml:LinearRing>
+              </gml:exterior>                         
+            </gml:Polygon>
+          </gml:surfaceMember>
+        </gml:MultiSurface>   
+      </test:the_geom>
+    </test:multipolygons>
+    <fes:Filter>
+      <fes:ResourceId rid="multipolygons.351"/>
+    </fes:Filter>
+  </wfs:Replace>
+</wfs:Transaction>`
+    xhr.send(xml);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

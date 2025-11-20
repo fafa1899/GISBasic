@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example8-5-WfsDelete</title>
+  <script>
+    var url = "/geoserver/wfs";
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-Type", "text/xml");
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText);
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+    //删除       
+    var xml = `<?xml version='1.0' encoding='UTF-8'?>
+<wfs:Transaction version="2.0.0" service="WFS"
+   xmlns:fes="http://www.opengis.net/fes/2.0"
+   xmlns:wfs="http://www.opengis.net/wfs/2.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.opengis.net/wfs/2.0
+                       http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+   <wfs:Delete typeName="test:multipolygons">
+      <fes:Filter>
+         <fes:ResourceId rid="multipolygons.351"/>
+      </fes:Filter>
+   </wfs:Delete>
+</wfs:Transaction>`
+    xhr.send(xml);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

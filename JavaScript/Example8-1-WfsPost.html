@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Example8-1-WfsPost</title>
+  <script>
+    var url = "/geoserver/wfs";
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-Type", "text/xml");
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText);
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+
+    //查询
+    var xml = `<?xml version='1.0' encoding='UTF-8'?>
+<wfs:GetFeature service=\"WFS\" version=\"2.0.0\" outputFormat=\"json\" 
+xmlns:wfs=\"http://www.opengis.net/wfs/2.0\" 
+xmlns:fes=\"http://www.opengis.net/fes/2.0\" 
+xmlns:gml=\"http://www.opengis.net/gml/3.2\" 
+xmlns:test=\"https://test\" 
+xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" 
+xsi:schemaLocation=\"http://www.opengis.net/wfs/2.0 
+http://schemas.opengis.net/wfs/2.0/wfs.xsd 
+http://www.opengis.net/gml/3.2 
+http://schemas.opengis.net/gml/3.2.1/gml.xsd\">
+  <wfs:Query typeNames='test:multipolygons'>
+    <fes:Filter>
+      <fes:Intersects>
+        <fes:ValueReference>test:the_geom</fes:ValueReference>
+        <gml:Envelope srsName=\"EPSG:4326\">
+          <gml:lowerCorner>
+            -77.039412232917 38.8954267799311
+          </gml:lowerCorner>
+          <gml:upperCorner>
+            -77.0380063000187 38.8965224165805
+          </gml:upperCorner>
+        </gml:Envelope>
+      </fes:Intersects>
+    </fes:Filter>
+  </wfs:Query>
+</wfs:GetFeature>`;
+    xhr.send(xml);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
