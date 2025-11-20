@@ -1,0 +1,17 @@
+CONFIG_VERSION=3.8.5
+CONFIG_INST_PREFIX=C:/File/MyGitHub/GISBasic/3rdParty
+CONFIG_INST_LIBS=-LIBPATH:C:/File/MyGitHub/GISBasic/3rdParty/lib gdal
+CONFIG_INST_CFLAGS=-IC:/File/MyGitHub/GISBasic/3rdParty/include
+CONFIG_INST_DATA=C:/File/MyGitHub/GISBasic/3rdParty/share/gdal
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Libs.private: wbemuuid C:/File/MyGitHub/GISBasic/3rdParty/lib/tiff.lib ws2_32 C:/File/MyGitHub/GISBasic/3rdParty/lib/jpeg.lib C:/File/MyGitHub/GISBasic/3rdParty/lib/libpng16.lib C:/File/MyGitHub/GISBasic/3rdParty/lib/giflib.lib C:/File/MyGitHub/GISBasic/3rdParty/lib/zlib.lib C:/File/MyGitHub/GISBasic/3rdParty/lib/sqlite3.lib legacy_stdio_definitions.lib odbccp32.lib C:/File/MyGitHub/GISBasic/3rdParty/lib/geos_c.lib psapi C:/File/MyGitHub/GISBasic/3rdParty/lib/proj.lib
+Cflags: ${CONFIG_INST_CFLAGS}
