@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelMetadata version="1">
+	<!--Spatial Reference System-->
+	<SRS>EPSG:2326</SRS>
+	<!--Origin in Spatial Reference System-->
+	<SRSOrigin>836974.635391304,815456.572217391,0</SRSOrigin>
+</ModelMetadata>
