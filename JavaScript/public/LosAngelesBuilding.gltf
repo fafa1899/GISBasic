@@ -1,0 +1,128 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_volume",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1609359,
+            "type": "VEC3",
+            "max": [
+                2356.7392578125,
+                2722.415771484375,
+                472.6084899902344
+            ],
+            "min": [
+                -2352.129150390625,
+                -2771.253662109375,
+                72.22444915771485
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1609359,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -0.004184015095233917
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 2250165,
+            "type": "SCALAR",
+            "max": [
+                1609358
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 47625276,
+            "uri": "LosAngelesBuilding.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 19312308,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 19312308,
+            "byteLength": 19312308,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 38624616,
+            "byteLength": 9000660,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "material",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7529399991035461,
+                    0.7529399991035461,
+                    0.7529399991035461,
+                    1.0
+                ],
+                "metallicFactor": 0.20000000298023225,
+                "roughnessFactor": 0.6000000238418579
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 2,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
