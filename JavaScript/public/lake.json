@@ -1,0 +1,10 @@
+[
+    {
+        "filePath": "./lake1.ply",
+        "waterHeight": 227.2
+    },
+    {
+        "filePath": "./lake2.ply",
+        "waterHeight": 216
+    }
+]
