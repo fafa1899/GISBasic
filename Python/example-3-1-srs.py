@@ -1,6 +1,4 @@
 import os
-import sys
-
 from osgeo import osr
 
 # 自动设置 PROJ_LIB for Conda (Windows/Linux/macOS) 
