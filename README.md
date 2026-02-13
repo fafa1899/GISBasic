@@ -6,6 +6,8 @@
 
 本仓库为《GIS基础原理与技术实践》一书的官方配套资源库，提供书中所有**可运行示例代码、实验数据、补充资料及勘误更新**，助力读者深入理解 GIS 核心原理并快速上手开发实践。
 
+![GIS基础原理与技术实践](https://raw.githubusercontent.com/fafa1899/GISBasic/refs/heads/main/Docs/Figure/cover.jpg)
+
 ---
 
 ## 💻 示例代码
