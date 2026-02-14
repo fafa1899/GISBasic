@@ -10,10 +10,10 @@ OGRSpatialReference gcs;  //地理坐标系
 OGRSpatialReference pcs;  //投影坐标系
 
 void CreateSrs() {
-  // CGCS2000
+  // wgs84
   gcs.importFromEPSG(4326);
 
-  // Tm投影
+  // web墨卡托
   pcs.importFromEPSG(3857);
 
   //# GDAL 3 changes axis order : https://github.com/OSGeo/gdal/issues/1546
