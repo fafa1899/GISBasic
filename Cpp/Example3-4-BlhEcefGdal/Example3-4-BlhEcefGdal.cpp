@@ -10,10 +10,10 @@ OGRSpatialReference gcs;   //地理坐标系
 OGRSpatialReference ecef;  //投影坐标系
 
 void CreateSrs() {
-  // CGCS2000
+  // WGS84
   gcs.importFromEPSG(4326);
 
-  // Tm投影
+  // 地心地固坐标系
   ecef.importFromEPSG(4978);
 
   //# GDAL 3 changes axis order : https://github.com/OSGeo/gdal/issues/1546
@@ -49,7 +49,7 @@ int main() {
   if (!ecef2Gcs->Transform(1, &x, &y, &z)) {
     return 1;
   }
-  printf("再次转换回的经纬度坐标：%.9lf\t%.9lf\t%.9lf\n", x, y, z);
+  printf("再次转换回的大地坐标：%.9lf\t%.9lf\t%.9lf\n", x, y, z);
 
   OGRCoordinateTransformation::DestroyCT(gcs2Ecef);
   gcs2Ecef = nullptr;

@@ -20,10 +20,10 @@ gcs = osr.SpatialReference()
 pcs = osr.SpatialReference()
 
 def create_srs():
-    # wgs84  
+    # WGS84  
     gcs.ImportFromEPSG(4326)
 
-    # web墨卡托
+    # Web墨卡托
     pcs.ImportFromEPSG(3857) 
 
     # GDAL 3 changes axis order : https://github.com/OSGeo/gdal/issues/1546

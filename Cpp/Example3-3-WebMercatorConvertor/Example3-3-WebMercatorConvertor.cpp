@@ -10,7 +10,7 @@ OGRSpatialReference gcs;  //地理坐标系
 OGRSpatialReference pcs;  //投影坐标系
 
 void CreateSrs() {
-  // wgs84
+  // WGS84
   gcs.importFromEPSG(4326);
 
   // web墨卡托
