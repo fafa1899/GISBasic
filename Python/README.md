@@ -15,3 +15,7 @@ conda activate gis-basic
 # 5. 运行任意例子
 
 python example_01/main.py
+
+# 6. 环境变量
+
+设置 环境变量 GISBasicRepo
