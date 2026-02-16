@@ -8,7 +8,7 @@
 
 <div align = "center">
 
-![GIS基础原理与技术实践](https://raw.githubusercontent.com/fafa1899/GISBasic/refs/heads/main/Docs/Figure/cover.jpg)
+![GIS基础原理与技术实践](./Docs/Figure/cover.jpg)
 
 </div>
 
