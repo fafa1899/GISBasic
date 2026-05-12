@@ -126,7 +126,7 @@ def main():
     # 保存图片
     gis_basic = os.getenv("GISBasicRepo")  
     if gis_basic:
-        img_path = os.path.join(gis_basic, "Data", "Raster", "image3.png")
+        img_path = os.path.join(gis_basic, "Data", "Raster", "dst.png")
         cv2.imwrite(img_path, img)
         print(f"热力图已保存至: {img_path}")
     else:
